@@ -9,7 +9,7 @@ Vagrant.configure(2) do |config|
     vb.memory = "2048"
   end
   config.vm.provision "docker" do |d|
-    d.build_image "/vagrant/mediawiki", args: "-t danmichaelo/mediawiki"
-    d.run "mediawiki-1", image: "danmichaelo/mediawiki", args: "-p 80:80"
+    d.build_image "/vagrant/1.24", args: "-t danmichaelo/mediawiki:1.24"
+    d.run "mediawiki-1", image: "danmichaelo/mediawiki:1.24", args: "-p 80:80"
   end
 end
