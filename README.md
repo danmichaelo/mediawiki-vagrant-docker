@@ -1,6 +1,8 @@
 
 
 Run `vagrant up` to spin up a MediaWiki installation at http://192.168.33.159 .
+The Docker image uses the
+[blackwinter/mediawiki-testwiki](https://github.com/blackwinter/mediawiki-testwiki) base image.
 
 Note: This is for testing only, this is *not a secure installation*!
 
